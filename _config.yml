@@ -27,6 +27,8 @@ baseurl: "/cyber_prime" # the subpath of your site, e.g. /blog
 url: "https://cyberprime-defense.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: cyberprime-defense
 
+toc: true
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
@@ -53,7 +55,7 @@ pageviews:
 theme_mode: # [light | dark]
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/img/bailee.png
 
 paginate: 10
 
@@ -74,6 +76,7 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+  toc_levels: 1..3 
 
 collections:
   tabs:
@@ -86,7 +89,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
+      comments: false # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.

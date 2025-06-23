@@ -5,3 +5,6 @@ _site/
 vendor/
 *.sublime-project
 *.sublime-workspace
+.env
+_drafts/
+_templates/

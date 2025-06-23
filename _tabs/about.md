@@ -4,5 +4,14 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## Hi there! 
+
+Hi there! My name is Bailee, and I have been working as a SOC analyst and Incident Responder. I wanted to put together a site containing all of the things I have learned and written down over the years. 
+
+So if you're interested in cyber defense, log analysis, incident response, or even some cloud (AWS and Azure) offense & defense, you’re in the right place! 
+
+Check out the [categories page]({{ site.baseurl }}/categories/) to see what all I'm up to. 
+
+### Feel free to connect with me:
+- on [LinkedIn](https://www.linkedin.com/in/baileemcbreairty/)
+- and on Discord (my username is @**Prlme**)
