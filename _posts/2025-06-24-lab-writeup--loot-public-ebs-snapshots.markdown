@@ -287,8 +287,8 @@ Signing into the new account…
 
 ```
 [root@ip-172-31-33-36 practice_files]# aws configure --profile "ecorpClientData"
-AWS Access Key ID [None]: AKIARQVIRZ4UDSDT72VT
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]: AKIA****DT72VT
+AWS Secret Access Key [None]: weAlW**********o6DByf8K3+CN
 Default region name [None]:
 Default output format [None]:
 [root@ip-172-31-33-36 practice_files]# aws sts get-caller-identity --profile "ecorpClientData"
