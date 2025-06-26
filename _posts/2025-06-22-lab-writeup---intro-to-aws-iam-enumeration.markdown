@@ -72,7 +72,7 @@ dev01 can get details about ‘BackendDev’ and ‘BackendDevPolicy’, so let�
 
 Welp, there it is. dev01 can use the permission `sts:AssumeRole` to take actions as BackendDev. This is a normal action for developers, it allows developers to take a role like this temporarily and use the elevated permissions it might have, without having those permissions all of the time. Luckily, we have the ability to see what BackendDev can do while the compromised dev01 was assuming it.
 
-```bash
+```plaintext
 # aws iam get-policy-version --policy-arn arn:aws:iam::794929857501:policy/BackendDevPolicy --version-id v1
 {
     "PolicyVersion": {
@@ -110,7 +110,7 @@ So BackendDev can Get and Describe secrets from Secrets Manager. Cool! (not). Sp
 
 Let’s also look at the inline policy `S3_Access` and see what it can do, since it’s an policy attached to dev01.
 
-```bash
+```plaintext
 "Statement": [
             {
                 "Effect": "Allow",
@@ -129,11 +129,11 @@ So it has access to List & Get objects in the S3 bucket “hl-dev-artifacts” a
 
 The key is hiding somewhere in the S3 bucket. I’m going to assume the BackendDev role to see if I can’t get in there.
 
-```bash
+```plaintext
 # aws sts assume-role --role-arn arn:aws:iam::794929857501:role/BackendDev --role-session-name test1
 ```
 
-```bash
+```plaintext
 # aws sts get-caller-identity
 {
     "UserId": "AROA3SFMDAPO2RZ36QVN6:test1",
@@ -145,7 +145,7 @@ The key is hiding somewhere in the S3 bucket. I’m going to assume the BackendD
 
 I spent a long time figuring out these commands, but I learned to use the following command:
 
-```bash
+```plaintext
 # aws s3 ls s3://hl-dev-artifacts
 2023-10-01 14:39:53       1235 android-kotlin-extensions-tooling-232.9921.47.pom
 2023-10-01 14:39:53     214036 android-project-system-gradle-models-232.9921.47-sources.jar

@@ -12,26 +12,26 @@ Lab Platform:
 : [PwnedLabs](https://pwnedlabs.io/labs/loot-public-ebs-snapshots)
 
 ---
-
+## Tools, Commands, & Resources
 ### Tools Used
-
 - AWS CLI
 
 ### Commands
-
-- `aws ec2 describe-snapshots --owner-ids 104506445608 --region us-east-1`
-- `aws ec2 describe-snapshot-attribute --attribute createVolumePermission --snapshot-id snap-0c0679098c7a4e636 --region us-east-1`
+- `aws ec2 describe-snapshots --owner-ids <account-id> --region <region>`
+  - List all of the active snapshots in a given AWS account ID and region. 
+- `aws ec2 describe-snapshot-attribute --attribute <attribute> --snapshot-id <snapshot-id> --region <region>` 
+  - Get details on a EC2 snapshot 
 
 ### References
-
 - <https://repost.aws/knowledge-center/ebs-snapshots-list>
+- <https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshot-attribute.html>
 
 ---
 
 ## Lab Walkthrough
 
 ### Enumeration & Initial Access
-**EBS (Elastic Block Store)** is a storage service that acts like a virtual hard drive to attach to EC2 instances. Even when the EC2 instance stops or is terminated, the EBS volume keeps the data available.
+The **Elastic Block Store (EBS)** is a storage service that acts like a virtual hard drive to attach to EC2 instances. Even when the EC2 instance stops or is terminated, the EBS volume keeps the data available.
 
 When you create an AMI (Amazon Machine Image) from an EC2 instance that uses an EBS volume, AWS will take a snapshot of that volume, which can act as a backup of the EC2’s virtual hard drive.
 

@@ -1,0 +1,29 @@
+// Override Chirpy's default `overflow` for the main code block container
+.highlight {
+  overflow-x: unset !important; /* Force off horizontal scrollbar */
+  overflow: unset !important;   /* Also unset general overflow if needed */
+}
+
+// Override Chirpy's `word-wrap: normal` and ensure full wrapping
+.highlight pre {
+  white-space: pre-wrap !important;       /* Preserve spaces but force lines to wrap */
+  word-wrap: break-word !important;       /* Force breaking of long words */
+  overflow-wrap: break-word !important;   /* Modern equivalent, for robustness */
+}
+
+// If you're using line numbers (which creates a table structure for code)
+// You'll need to override the 'pre' tag nested within the table cell for code.
+.highlight table td pre {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important; /* Counteract Chirpy's 'normal' for word-break */
+  overflow: visible !important; /* Ensure it doesn't get clipped if it had 'hidden' for some reason */
+}
+
+// For inline code snippets (not in blocks), if they also need breaking
+code {
+  word-break: break-all !important; /* Allows breaking at any character */
+  word-wrap: break-word !important;
+  hyphens: auto !important; /* Allow hyphenation if words break */
+}
