@@ -1,0 +1,26 @@
+/* assets/css/custom-styles.css */
+
+.highlight {
+  overflow-x: unset !important;
+  overflow: unset !important;
+}
+
+.highlight pre {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.highlight table td pre {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  overflow: visible !important;
+}
+
+code {
+  word-break: break-all !important;
+  word-wrap: break-word !important;
+  hyphens: auto !important;
+}
