@@ -3,7 +3,7 @@ title: Lab Writeup - Loot Public EBS Snapshots
 layout: post
 date: 2025-06-24
 categories: [Writeups, PwnedLabs]
-tags: [Cloud, CTF, AWS]
+tags: [Cloud, CTF, AWS, EC2]
 author: bailee
 toc: true
 description: Given AWS creds of an intern, see how far you elevate access.

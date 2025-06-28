@@ -3,7 +3,7 @@ title: Lab Writeup - Intro to AWS IAM Enumeration
 layout: post
 date: 2025-06-22
 categories: [Writeups, PwnedLabs]
-tags: [AWS, Cloud, CTF]
+tags: [AWS, Cloud, CTF, IAM]
 author: bailee
 toc: true
 description: You are tasked with enumerating the IAM user dev01 and mapping out any potentially compromised resources. Enumerate IAM roles, policies, and permissions.

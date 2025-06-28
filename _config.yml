@@ -23,8 +23,9 @@ email: bailee41@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My findings and learnings from my years of experience as a SOC analyst and incident responder. 
 
-baseurl: "/cyber_prime" # the subpath of your site, e.g. /blog
-url: "https://cyberprime-defense.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # Should be exactly this
+url: "https://cyberprime-defense.github.io" # Your GitHub Pages URL
+
 github_username: cyberprime-defense
 
 toc: true
