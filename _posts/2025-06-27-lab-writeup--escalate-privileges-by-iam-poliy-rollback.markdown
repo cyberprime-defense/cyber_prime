@@ -1,9 +1,9 @@
 ---
-title: Lab Writeup - Escalate Privileges by IAM Policy Rollback
+title: Escalate Privileges by IAM Policy Rollback
 layout: post
 date: 2025-06-27
 categories: [Writeups, PwnedLabs]
-tags: [Cloud, CTF, AWS, John the Ripper]
+tags: [Cloud, AWS, John the Ripper]
 author: bailee
 toc: true
 description: Using a file containing AWS credentials, navigate and access sensitive data and resources.

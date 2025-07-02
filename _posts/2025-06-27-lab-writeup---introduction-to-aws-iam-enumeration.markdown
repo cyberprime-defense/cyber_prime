@@ -1,5 +1,5 @@
 ---
-title: Lab Writeup - Introduction to AWS IAM Enumeration
+title: Introduction to AWS IAM Enumeration
 layout: post
 date: 2025-06-27
 categories: [Writeups, Cybr]

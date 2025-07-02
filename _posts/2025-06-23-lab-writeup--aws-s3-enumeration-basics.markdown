@@ -1,9 +1,9 @@
 ---
-title: Lab Writeup - AWS S3 Basics
+title: AWS S3 Basics
 layout: post
 date: 2025-06-23
 categories: [Writeups, PwnedLabs]
-tags: [Cloud, CTF, AWS, S3]
+tags: [Cloud, AWS, S3]
 author: bailee
 toc: true
 description: Examine a website found in a phished employee’s bookmarks, and gain access to privileged company data in a S3 bucket. 

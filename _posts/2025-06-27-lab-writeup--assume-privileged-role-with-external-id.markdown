@@ -1,9 +1,9 @@
 ---
-title: Lab Writeup - Assume Privileged Role with External ID
+title: Assume Privileged Role with External ID
 layout: post
 date: 2025-06-27
 categories: [Writeups, PwnedLabs]
-tags: [Cloud, CTF, AWS, AWS-Enumerator, FFUF]
+tags: [Cloud, AWS, AWS-Enumerator, FFUF]
 author: bailee
 toc: true
 description: Using an IP as an entry point, navigate laterally, and determine potential areas of impact.

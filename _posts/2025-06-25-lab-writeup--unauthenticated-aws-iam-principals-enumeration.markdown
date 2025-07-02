@@ -1,9 +1,9 @@
 ---
-title: Lab Writeup - Unauthenticated AWS IAM Principals Enumeration
+title: Unauthenticated AWS IAM Principals Enumeration
 layout: post
 date: 2025-06-25
 categories: [Writeups, PwnedLabs]
-tags: [Cloud, CTF, Pacu, IAM]
+tags: [Cloud, AWS, Pacu, IAM]
 author: bailee
 toc: true
 description: Given an AWS Account ID, carry out comprehensive IAM enumeration and uncover vulnerabilities.
